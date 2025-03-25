@@ -1,20 +1,21 @@
-https://xgm.guru/files/2377/346120/preview.png
-
-# Запуск
-
 ((макет
-((блок50
-
+((блок33
+https://xgm.guru/files/2377/346120/logo1.png
+))
+((блок66
+((макет
+((блок66
 - Нажмите `Win+R`
 - Наберите `cmd`
 - Нажмите `Enter`
 - Перетащите `MPQEditor.exe` в окно консоли
 - Наберите `/console`
 - Нажмите `Enter`
-
 ))
-((блок50
+((блок33
 https://xgm.guru/files/2377/346120/cli.mp4
+))
+))
 ))
 ))
 
@@ -56,7 +57,7 @@ https://xgm.guru/files/2377/346120/cli.mp4
 - [ver](https://xgm.guru/p/warraft/MPQ-Editor_CLI#version)
 - [version](https://xgm.guru/p/warraft/MPQ-Editor_CLI#version)
 
-## add
+# add
 
 Добавляет один или несколько файлов в MPQ. Заменяет существующие файлы.
 
@@ -72,7 +73,7 @@ TargetName | Target file name (or directory name) in MPQ.
 /auto | Choose compression by file type.               
 /r | Recurse subdirectories.
 
-### Not enough space on the disk
+## Not enough space on the disk
 
 ((макет
 ((блок50
@@ -80,11 +81,11 @@ TargetName | Target file name (or directory name) in MPQ.
 `Set Max File Count` в интерфейсе редактора.
 ))
 ((блок50
-[файл: SetMaxFileCount.png]
+https://xgm.guru/files/2377/346120/SetMaxFileCount.png
 ))
 ))
 
-## chdir
+# chdir
 
 Changes the current directory.
 
@@ -92,7 +93,7 @@ Changes the current directory.
 chdir NewDirectory
 ```
 
-## close
+# close
 
 Closes currently open MPQ.
 Automatically done at the end of script processing or after `exit` command.
@@ -101,7 +102,7 @@ Automatically done at the end of script processing or after `exit` command.
 c|close
 ```
 
-## compact
+# compact
 
 Compacts the MPQ, removing all empty space.
 
@@ -113,7 +114,7 @@ MpqFile | Name of the MPQ to be used for this operation.
 ListFile | Listfile name. If none, the internal listfile is used.
 |
 
-## console
+# console
 
 Runs the MPQ Editor in the console mode. This command only works from the command line.
 
@@ -127,7 +128,7 @@ console
 D:\MPQEditor.exe /console
 ```
 
-## delete
+# delete
 
 Deletes a file within MPQ.
 
@@ -139,7 +140,7 @@ MpqFile | Name of the MPQ to be used for this operation.
 FileName | Name of file to be deleted.
 |
 
-## exit
+# exit
 
 Closes the script console.
 Also closes opened MPQ.
@@ -148,7 +149,7 @@ Also closes opened MPQ.
 exit|quit
 ```
 
-## extract
+# extract
 
 Extracts one or more files from MPQ Archive.
 
@@ -163,7 +164,7 @@ TargetDir | Target dir. If not entered, the current dir will be used.
 /fp | Forces extraction with the path stored in MPQ file
 /lower | Creates lowercase path
 
-## flush
+# flush
 
 Compacts the MPQ, removing all empty space.
 
@@ -175,7 +176,7 @@ MpqFile | Name of the MPQ to be used for this operation.
 ListFile | Listfile name. If none, the internal listfile is used.
 |
 
-## help
+# help
 
 Shows basic help about a command.
 
@@ -183,7 +184,7 @@ Shows basic help about a command.
 help [command]
 ```
 
-## htsize
+# htsize
 
 Changes hash table size of the archive.
 
@@ -195,7 +196,7 @@ MpqFile | Name of the MPQ to be used for this operation.
 HashTableSize | File limit. Can be a dec or hex number. Default is `0x1000`.
 |
 
-## list
+# list
 
 Lists files in MPQ.
 Can list them to the screen or to a file.
@@ -208,7 +209,7 @@ MpqFile | Name of the MPQ to be used for this operation.
 FileMask | File mask to be listed.
 OutFile | Name of text file that contain the file list.
 
-## mksvf
+# mksvf
 
 Creates a file that contains MD5 values of each file in the MPQ.
 
@@ -216,7 +217,7 @@ Creates a file that contains MD5 values of each file in the MPQ.
 mksvf
 ```
 
-## move
+# move
 
 Moves a file within MPQ into another dir.
 
@@ -228,7 +229,7 @@ MpqFile | Name of the MPQ to be used for this operation.
 FileName | Name of file to be moved.
 NewDirectory | Target directory within MPQ to move the file to.
 
-## new
+# new
 
 Creates a new MPQ. If the file already exists, it will be converted to MPQ.
 
@@ -240,7 +241,7 @@ MpqFile | Name of the MPQ to be used for this operation.
 MaxFileCount | File limit. Can be a dec or hex number. Default is `0x1000`.
 |
 
-## open
+# open
 
 Opens an existing MPQ. If the file doesn't exist, the function fails.
 
@@ -252,7 +253,7 @@ MpqFile | Name of the MPQ to be used for this operation.
 ListFile | Name of the listfile to be used on open operation.
 |
 
-## openpatch
+# openpatch
 
 Opens multiple MPQs in patch mode. If any of the MPQs doesn't exist,
 the function fails.
@@ -265,7 +266,7 @@ BaseMpq | Name of the base MPQ.
 PatchNameX | Name of patch MPQ. Older patch MPQs must come first.     
 ListFile | Name(s) of external listfile(s) to be additionally used.
 
-## rename
+# rename
 
 Renames a file within MPQ.
 
@@ -277,7 +278,7 @@ MpqFile | Name of the MPQ to be used for this operation.
 OldFileName | Name of file to be renamed.                   
 NewFileName | New name of the file
 
-## script
+# script
 
 Processes a MoPaQ 2000 script.
 
@@ -285,12 +286,10 @@ Processes a MoPaQ 2000 script.
 script ScriptFile
 ```
 
-## version
+# version
 
 Shows version of MPQ Editor.
 
 ```
 v|ver|version
 ```
-
-
